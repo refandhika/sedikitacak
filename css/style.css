@@ -2,6 +2,10 @@ html {
 	font-family: "Courier";
 }
 
+footer {
+	font-size: 10pt;
+}
+
 .btn-circle {
 	display: inline-block;
 	border: 2px solid #000000;
