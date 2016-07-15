@@ -1,0 +1,42 @@
+html {
+	font-family: "Helvetica";
+}
+
+.btn-circle {
+	display: inline-block;
+	border: 2px solid #000000;
+	border-radius: 20px;
+	background: #000000;
+	color: #ffffff;
+	height: 20px;
+	width: 20px;
+	text-align: center;
+}
+
+.btn-circle:hover {
+	background: #ffffff;
+}
+
+.btn-more {
+	position: absolute;
+	top: 180px;
+	left: 655px;
+}
+
+.btn-works {
+	position: absolute;
+	top: 300px;
+	left: 535px;
+}
+
+.btn-logs {
+	position: absolute;
+	top: 300px;
+	left: 775px;
+}
+
+.btn-about {
+	position: absolute;
+	top: 420px;
+	left: 655px;
+}
