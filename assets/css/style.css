@@ -4,6 +4,27 @@ html {
 }
 
 footer {
+	position: fixed;
+	top: 96%;
+	left: 87%;
+	font-size: 10pt;
+}
+
+h2 {
+	margin: 25px 25px 10px 25px;
+}
+
+h3 {
+	margin: 10px 50px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+p {
 	font-size: 10pt;
 }
 
@@ -33,7 +54,6 @@ footer {
 .btn-circle:hover {
 	background: #ffffff;
 	color: #000000;
-	z-index: 1;
 }
 
 .btn-circle-x {
@@ -80,13 +100,26 @@ footer {
 }
 
 .in-text {
-	margin-top: 1px;
-	text-align: center;
+	margin: 1px 5px;
+	z-index: 1;
 }
 
 /* Views */
 .container {
 	margin: 50px;
+	overflow-y: auto;
+	height: 600px;
+	padding-right: 100px;
+}
+
+.content {
+	margin: 25px 0;
+	width: 100%;
+}
+
+p:hover, li:hover, h1:hover, h2:hover, h3:hover {
+	background: #ffffff;
+	color: #000000;
 }
 
 .view-about, .view-works,
@@ -99,4 +132,10 @@ footer {
 	color: #ffffff;
 	display: none;
 	z-index: 3;
+}
+
+/* Column */
+.col-md {
+	display: inline-block;
+	width: 49%;
 }
