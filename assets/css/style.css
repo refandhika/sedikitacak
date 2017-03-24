@@ -5,8 +5,8 @@ html {
 
 footer {
 	position: fixed;
-	top: 96%;
-	left: 87%;
+	top: 96vh;
+	left: 80vw;
 	font-size: 10pt;
 }
 

@@ -2,31 +2,48 @@
 <html contenteditable="true">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sedikit Acak</title>
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 	<body>
-		<div class="btn btn-circle btn-more"><div class="in-text">M</div></div>
-		<div class="btn btn-circle btn-works"><div class="in-text">W</div></div>
-		<div class="btn btn-circle btn-logs"><div class="in-text">L</div></div>
-		<div class="btn btn-circle btn-about"><div class="in-text">A</div></div>
+		<div id="sedikit-btn">
+			<div class="btn btn-circle btn-more"><div class="in-text">M</div></div>
+			<div class="btn btn-circle btn-works"><div class="in-text">W</div></div>
+			<div class="btn btn-circle btn-logs"><div class="in-text">L</div></div>
+			<div class="btn btn-circle btn-about"><div class="in-text">A</div></div>
+		</div>
 	</body>
 	
 	<footer>
-		&copy; Refa Andhika 2016 
+		&copy; Refa Andhika 2016 - 2017
 	</footer>
 
-	<script src="assets/js/jquery-1.12.3.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyDGzavlWXPi20ylHp5D-h6wiYKXEaFj-K4",
+	    authDomain: "sedikit-acak.firebaseapp.com",
+	    databaseURL: "https://sedikit-acak.firebaseio.com",
+	    storageBucket: "sedikit-acak.appspot.com",
+	    messagingSenderId: "620762660097"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/vue.min.js"></script>
 	<script src="assets/js/assets.js"></script>
 
 </html>
 
 
-	<div class="view-more">
+	<div class="view-main">
 		<div class="container">
 			<h1>What the heck is this?</h1>
-			<div class="content">
-				<p>This is an occasionally random page, where one certain person can freely share his piece of life.</p>
+			<div id="message" class="content">
+				<p>{{newMessage}}</p>
 			</div>
 		</div>
 	</div>
