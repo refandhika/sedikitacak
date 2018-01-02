@@ -15,7 +15,7 @@ func (c *SkillController) Get() {
 	c.Data["Page"] = "skill"
 	c.Data["Time"] = &Temp{Year: tick.Year(), Month: int(tick.Month()), Day: tick.Day()}
 
-	c.Layout = "layout_index.tpl"
-	c.TplName = "skill.tpl"
+	c.Layout = "main/layout_index.tpl"
+	c.TplName = "main/skill.tpl"
 	c.LayoutSections = make(map[string]string)
 }

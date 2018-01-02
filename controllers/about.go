@@ -15,7 +15,7 @@ func (c *AboutController) Get() {
 	c.Data["Page"] = "about"
 	c.Data["Time"] = &Temp{Year: tick.Year(), Month: int(tick.Month()), Day: tick.Day()}
 
-	c.Layout = "layout_index.tpl"
-	c.TplName = "about.tpl"
+	c.Layout = "main/layout_index.tpl"
+	c.TplName = "main/about.tpl"
 	c.LayoutSections = make(map[string]string)
 }

@@ -54,6 +54,15 @@ a {
 	text-decoration: none;
 }
 
+.exp-sect-title>a{
+	color: inherit;
+}
+
+
+.exp-sect-title>a:hover{
+	text-decoration: underline;
+}
+
 .page-title,
 .exp-sect-title,
 .exp-sect-pos,

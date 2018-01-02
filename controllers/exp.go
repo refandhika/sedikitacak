@@ -15,7 +15,7 @@ func (c *ExpController) Get() {
 	c.Data["Page"] = "exp"
 	c.Data["Time"] = &Temp{Year: tick.Year(), Month: int(tick.Month()), Day: tick.Day()}
 
-	c.Layout = "layout_index.tpl"
-	c.TplName = "exp.tpl"
+	c.Layout = "main/layout_index.tpl"
+	c.TplName = "main/exp.tpl"
 	c.LayoutSections = make(map[string]string)
 }
